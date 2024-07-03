@@ -185,3 +185,84 @@ window.addEventListener("load", function () {
   animate(0);
 });
 ```
+# les Animation des enemies 
+pour ces animation on va utiliser les mouvement sinusoïdal sur l'axe x et y avec la formule A * sin(angle * t)et A * cos(angle * t) on jou avec les paramètre pour obtenue  de movement intéressant de façon uniforme.
+on commence avec le fichier html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technique d’animation de sprite</title>
+    <link
+      rel="stylesheet"
+      href="../../../../asset/styles/jeux/animation-des-enemies/style.css"
+    />
+  </head>
+
+  <body>
+    <div class="container__canvas">
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+    <canvas id="canvas4"></canvas>
+  </div>
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy1.png"
+      alt="enemy1"
+      id="enemy1"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy2.png"
+      alt="enemy2"
+      id="enemy2"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy3.png"
+      alt="enemy3"
+      id="enemy3"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy4.png"
+      alt="enemy4"
+      id="enemy4"
+    />
+    
+
+    <script
+      type="module"
+      src="../../../../asset/js/jeux/animation-des-enemies/main.js"
+    ></script>
+  </body>
+</html>
+```
+quelques styles sur notre projet
+```css
+.container__canvas {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+#canvas1,
+#canvas2,
+#canvas3,
+#canvas4 {
+  border: 3px solid black;
+  height: 700px;
+  width: 500px;
+  margin: 20px;
+}
+
+#enemy1,
+#enemy2,
+#enemy3,
+#enemy4 {
+  display: none;
+}
+
+```
