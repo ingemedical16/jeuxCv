@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Background</title>
+    <link
+      rel="stylesheet"
+      href="../../../../asset/styles/jeux/parallax/style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="canvas1"></canvas>
+
+      <p>Game speed: <span id="showGameSpeed"></span></p>
+      <input type="range" min="0" max="20" class="slider" id="slider" />
+      <img src="../../../../asset/img/jeux/parallax/layer-1.png" alt="layer" id="layer1">
+      <img src="../../../../asset/img/jeux/parallax/layer-2.png" alt="layer" id="layer2">
+      <img src="../../../../asset/img/jeux/parallax/layer-3.png" alt="layer" id="layer3">
+      <img src="../../../../asset/img/jeux/parallax/layer-4.png" alt="layer" id="layer4">
+      <img src="../../../../asset/img/jeux/parallax/layer-5.png" alt="layer" id="layer5">
+    </div>
+
+    <script
+      type="module"
+      src="../../../../asset/js/jeux/parallax/main.js"
+    ></script>
+  </body>
+</html>
