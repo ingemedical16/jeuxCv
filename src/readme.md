@@ -304,5 +304,108 @@ export default class Layer {
       );
     }
   }
- 
 ```
+# 4 - Gestion de l'état du joueur
+On va voir dans cette section les technique de gestion d’état de Jour, dans ce projet on va utilisé   une class avec deux listener 'keydown' et 'keyup' cette class va manipuler les saisir de utilisateur dans un seul variable 'lastkey' press ou release.
+```js
+  import { KEYEVENT } from "./utils.js";
+export default class InputHandler {
+  constructor() {
+    this.lastKey = "";
+
+    window.addEventListener("keydown", (e) => {
+      console.log(this.lastKey);
+      switch (e.key) {
+        case "ArrowRight":
+          this.lastKey = KEYEVENT.PRESS_RIGHT;
+          break;
+        case "ArrowLeft":
+          this.lastKey = KEYEVENT.PRESS_LEFT;
+          break;
+        case "ArrowUp":
+          this.lastKey = KEYEVENT.PRESS_UP;
+          break;
+        case "ArrowDown":
+          this.lastKey = KEYEVENT.PRESS_DOWN;
+          break;
+        case "Enter":
+          this.lastKey = KEYEVENT.PRESS_ENTER;
+          break;
+      }
+    });
+
+    window.addEventListener("keyup", (e) => {
+        console.log(this.lastKey);
+      switch (e.key) {
+        case "ArrowRight":
+          this.lastKey = KEYEVENT.RELEASE_RIGHT;
+          break;
+        case "ArrowLeft":
+          this.lastKey = KEYEVENT.RELEASE_LEFT;
+          break;
+        case "ArrowUp":
+          this.lastKey = KEYEVENT.RELEASE_UP;
+          break;
+        case "ArrowDown":
+          this.lastKey = KEYEVENT.RELEASE_DOWN;
+          break;
+        case "Enter":
+          this.lastKey = KEYEVENT.RELEASE_ENTER;
+          break;
+      }
+    });
+  }
+}
+```
+dans cette partie on va voir quelque principe de programmation orient object
+# principes of object Oriented programming:
+## 1- Encapsulation 
+can be used to protect our data from unwanted outside access, it simplifies maintenance of our code by keeping it organises and easier to understand.
+
+#### 
+--> extends keyword is used to create a child class (sub class) extending classes is good example of one of four pillars of object-oriented programming called inheritance:
+
+## 2- Inheritance
+is a process where one class inherits attributes and methods from another class. we use it to avoid code repetition, you can use super keyword in child classes to access and call methods on Object parent une super is used in a constructor like:
+```JavaScript
+class supClass extends parentClass {
+    constructor(arg){
+        super(arg_forParant)
+    }
+}
+```
+      ```JS
+        class State {
+  // Parent class also called "super class"
+  constructor(state) {
+    this.state = state;
+  }
+}
+
+                class StandingLeft extends State {
+                //child class also called "sub class"
+                constructor(player) {
+                    super("STANDING LEFT");
+                    this.player = player;
+                }
+ 1 ----->        enter(){}
+2---------->     handleInput(){}
+                }
+
+            class StandingRight extends State {
+                //child class also called "sub class"
+                constructor(player) {
+                super("STANDING RIGHT");
+                this.player = player;
+                }
+1 ------>        enter(){}
+2 ---------->    handleInput(){}
+            }
+      ```
+
+wheen the methods named exactly the same this is very important: placing methods with the same names on different objects is an example of one of the core concepts de object-oriented programming call polymorphism:
+
+## 3- Polymorphism
+
+out of this for concepts it's the most complex one  to fully understand since it has multiple types in this case:
+Polymorphism allows methods to display different behaviors depending on which class calls it.

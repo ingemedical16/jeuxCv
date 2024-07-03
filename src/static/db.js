@@ -41,3 +41,16 @@ export const dogAnimationStates = [
       frames: 4,
     }
   ];
+
+  export const KEYEVENT = {
+    PRESS_LEFT: 'PRESS_LEFT',
+    PRESS_RIGHT: 'PRESS_RIGHT',
+    PRESS_UP: 'PRESS_UP',
+    PRESS_DOWN: 'PRESS_DOWN',
+    PRESS_ENTER: 'PRESS_ENTER',
+    RELEASE_LEFT: 'RELEASE_LEFT',
+    RELEASE_RIGHT: 'RELEASE_RIGHT',
+    RELEASE_UP: 'RELEASE_UP',
+    RELEASE_DOWN: 'RELEASE_DOWN',
+    RELEASE_ENTER: 'RELEASE_ENTER',
+}

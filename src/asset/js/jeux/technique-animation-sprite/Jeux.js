@@ -17,7 +17,7 @@ export default class Jeux {
     });
   }
   restart() {}
-  render(context, deltaTime) {
+  render(context) {
     context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
     this.joueur.dessiner(context);
