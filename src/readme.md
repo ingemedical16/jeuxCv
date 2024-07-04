@@ -358,7 +358,7 @@ export default class InputHandler {
 }
 ```
 dans cette partie on va voir quelque principe de programmation orient object
-# principes of object Oriented programming:
+# 5 - principes of object Oriented programming:
 ## 1- Encapsulation 
 can be used to protect our data from unwanted outside access, it simplifies maintenance of our code by keeping it organises and easier to understand.
 
@@ -409,3 +409,44 @@ wheen the methods named exactly the same this is very important: placing methods
 
 out of this for concepts it's the most complex one  to fully understand since it has multiple types in this case:
 Polymorphism allows methods to display different behaviors depending on which class calls it.
+
+# 6 - collision deux rectangle
+```js
+let rect1 = {
+  x: 5,
+  y: 20,
+  width: 100,
+  height: 100,
+};
+let rect2 = {
+  x: 20,
+  y: 20,
+  width: 50,
+  height: 50,
+};
+// check collision first
+if (
+  rect1.x < rect2.x + rect2.width &&
+  rect1.x + rect1.width > rect2.x &&
+  rect1.y < rect2.yv + rect2.height &&
+  rect1.y + rect1.height > rect2.y
+) {
+  //collision detected
+} else {
+  // no collision detected
+}
+
+if (
+  rect1.x > rect2.x + rect2.width ||
+  rect1.x + rect1.width < rect2.x ||
+  rect1.y > rect2.yv + rect2.height ||
+  rect1.y + rect1.height < rect2.y
+) {
+  // no collision detected
+} else {
+  //collision detected
+}
+
+```
+# 7 - Example jeu  Genouillé.
+dans cette jeux l'objectif de applique la verifications  de collision en effet notre grenouille doit passe a l'autre coûte sans collision avec les voiture et sans tombe dans l'eau. 

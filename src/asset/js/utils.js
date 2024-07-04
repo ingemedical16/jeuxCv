@@ -20,5 +20,14 @@ export function drawStatusText(ctx,input,player){
     ctx.fillText("Active State: " + player.currentState.state,20,90);
 }
 
+export  function collision(first, second) {
+    return !(
+      first.x > second.x + second.width ||
+      first.x + first.width < second.x ||
+      first.y > second.y + second.height ||
+      first.y + first.height < second.y
+    );
+  }
+
 
 
