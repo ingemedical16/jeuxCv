@@ -450,3 +450,12 @@ if (
 ```
 # 7 - Example jeu  Genouillé.
 dans cette jeux l'objectif de applique la verifications  de collision en effet notre grenouille doit passe a l'autre coûte sans collision avec les voiture et sans tombe dans l'eau. 
+
+# 8 - Example jeu Blue
+le jeu c'est enivrement a des obstacles qui place aléatoirement. des oeufs qui va place aléatoirement de façon periodique avec un nombre limit, chaque œuf éclot en 5 secondes et donne naissance à un Grand ou compétence qui va vole
+dans cette jeu on va donne a notre elements de jeux  caractéristiques soumis a de loi des physiques, exemple un 
+ - obstacle le joueur et les emmies ne peut pas dépassé physiquement,il va evite Automatiquement.
+ - les oeufs  est un obstacle qui pe déplace a la collision avec le joueur ou les enemies
+ - les enemies peu déplace par le joueur
+ - les nouveau nee peut-il mangier par les enemies
+ pour ce demo j'ai set le score gagnant 30, puis le program évolue combiner des  competence perdu si  plus de 5 c'est perdant si non gagnant.                                                      
