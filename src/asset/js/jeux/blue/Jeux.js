@@ -184,7 +184,7 @@ export default class Jeux {
       this.init();
     }
     init() {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 3; i++) {
         this.ajouterElement("enemy");
       }
       let tentatives = 0;

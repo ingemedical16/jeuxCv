@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>JavaScript game</title>
+    <style>
+        body{
+            background: black;
+            font-family: "Press Start 2P", system-ui;
+        }
+        canvas {
+            border: 5px solid white;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            background: url('img/grass_day.png');
+        }
+        .assets{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+<div class="assets">
+  <img id="grass_day" src="img/grass_day.png" alt="grass_day">
+  <img id="grass_night" src="img/grass_night.png" alt="grass_night">
+  <img id="magic_berry" src="img/magic_berry.png" alt="magic_berry">
+  <img id="snake_zilla" src="img/snake_zilla.png" alt="snake_zilla">  
+</div>
+    <script src="constant.js"></script>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
