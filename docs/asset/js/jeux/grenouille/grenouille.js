@@ -46,7 +46,7 @@ export default class Grenouille {
               this.moving = true;
             }
           }
-          if (this.y < 0) scored();
+          if (this.y < 0) this.jeux.scored();
         }
     
     dessiner(ctx3) {
