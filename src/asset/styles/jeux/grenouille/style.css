@@ -1,5 +1,8 @@
+body{
+  background: #111;
+}
 .wrapper {
-  border: 5px solid black;
+  border: 5px solid gold;
   position: absolute;
   top: 50%;
   left: 50%;

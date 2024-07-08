@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../../../asset/img/cv/me.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../../../asset/img/cv/me.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../../asset/styles/tmp.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../../static/constant.js"></script>
     <title>Technique d’animation de sprite</title>
     <link
       rel="stylesheet"
@@ -13,12 +24,128 @@
   </head>
 
   <body>
-    <div class="container__canvas">
-    <canvas id="canvas1"></canvas>
-    <canvas id="canvas2"></canvas>
-    <canvas id="canvas3"></canvas>
-    <canvas id="canvas4"></canvas>
-  </div>
+    <!--ring div starts here-->
+    <div id="ring" class="ring">
+      <i style="--clr: #00ff0a"></i>
+      <i style="--clr: #ff0057"></i>
+      <i style="--clr: #fffd44"></i>
+      <div class="login">
+        <h2>Login</h2>
+        <div class="inputBx">
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Entre votre nom complet"
+            required
+          />
+          <p id="nameError" class="error">Entre un nom valid!</p>
+        </div>
+        <div class="inputBx">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Entre votre E-mail"
+            required
+          />
+          <p id="emailError" class="error">Entre un E-mail valide!</p>
+        </div>
+        <div class="inputBx">
+          <input id="submitBtn" type="submit" value="Sign in" />
+        </div>
+        <div class="links"></div>
+      </div>
+    </div>
+    <!--ring div ends here-->
+    <div id="isLogin">
+      <div id="maCart">
+        <div class="cardBox">
+          <div class="card">
+            <h2>Bonjour</h2>
+            <span></span>
+            <div class="content">
+              <div class="imgContainer">
+                <img src="../../../../asset/img/cv/me.png" alt="" />
+              </div>
+              <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
+              <p>
+                Je suis Mohamed EL-IDRISSI le développeur de ce jeu ! Je suis
+                développeur Full Stack vorace de s’améliorer et prêt toujours
+                pour le challenge.<br />
+                Je vais vous accompagner durant toutes les étapes dans votre
+                aventure, amusez-vous et je vous souhaite bonne chance
+              </p>
+              <hr />
+              <button id="enterBtn" style="width: 200px">
+                Entre dans portfolio
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" id="root">
+        <div class="menu">
+          <a
+            class="icon linkedin"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/ingmedical16/"
+            target="_blank"
+          ></a>
+          <a
+            class="icon angular"
+            aria-label="Angular"
+            href="#"
+            target="_blank"
+          ></a>
+          <a class="icon react" aria-label="X" href="#" target="_blank"></a>
+          <a
+            class="icon bootstrap"
+            aria-label="bootstrap"
+            href="#"
+            target="_blank"
+          ></a>
+          <a class="icon html" aria-label="Html" href="#" target="_blank"></a>
+          <a class="icon css" aria-label="CSS" href="#" target="_blank"></a>
+          <a class="icon js" aria-label="js" href="#" target="_blank"></a>
+          <a
+            class="icon nodejs"
+            aria-label="nodejs"
+            href="#"
+            target="_blank"
+          ></a>
+          <a
+            class="icon mongodb"
+            aria-label="mongodb"
+            href="#"
+            target="_blank"
+          ></a>
+
+          <a
+            class="icon jquery"
+            aria-label="jquery"
+            href="#"
+            target="_blank"
+          ></a>
+          <a
+            class="icon github"
+            aria-label="GitHub"
+            href="https://github.com/ingemedical16"
+            target="_blank"
+          ></a>
+        </div>
+        <div id="jeux">
+          <div class="container__canvas">
+            <!--cod de page-->
+            <canvas  id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas3"></canvas>
+            <canvas id="canvas4"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <img
       src="../../../../asset/img/jeux/animation-des-enemies/enemy1.png"
       alt="enemy1"
@@ -39,7 +166,6 @@
       alt="enemy4"
       id="enemy4"
     />
-    
 
     <script
       type="module"

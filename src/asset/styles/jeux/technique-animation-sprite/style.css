@@ -1,6 +1,7 @@
 
     #canvas1 {
       border: 5px solid black;
+      background-color: goldenrod;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -19,6 +20,7 @@
       left: 50%;
       /* center horyzontally */
       transform: translateX(-50%);
+      color:goldenrod
     }
     
     .controls,

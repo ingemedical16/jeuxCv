@@ -2,24 +2,19 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../../../asset/img/cv/me.png" type="image/x-icon">
-<link rel="stylesheet" href="../../../../asset/styles/tmp.css">
+    <link rel="shortcut icon" href="asset/img/cv/me.png" type="image/x-icon" />
+    <link rel="stylesheet" href="tmp.css">
+    <link rel="stylesheet" href="asset/styles/style.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="../../../../static/constant.js"></script>
-    
-    <title>Technique d’animation de sprite</title>
-    <link
-      rel="stylesheet"
-      href="../../../../asset/styles/jeux/technique-animation-sprite/style.css"
-    />
+    <script src="static/constant.js"></script>
+    <title>jeux CV</title>
   </head>
-
   <body>
     <!--ring div starts here-->
     <div id="ring" class="ring">
@@ -63,7 +58,7 @@
             <span></span>
             <div class="content">
               <div class="imgContainer">
-                <img src="../../../../asset/img/cv/me.png" alt="" />
+                <img src="./asset/img/cv/me.png" alt="" />
               </div>
               <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
               <p>
@@ -133,36 +128,11 @@
         </div>
         <div id="jeux">
             <!--cod de page-->
-            <canvas id="canvas1"></canvas>
-            <div class="controls">
-              <label for="animations">Choose Animation:</label>
-              <select id="animations" name="animations">
-                <option value="idle">Idle</option>
-                <option value="jump">jump</option>
-                <option value="fail">fail</option>
-                <option value="run">run</option>
-                <option value="dizzy">dizzy</option>
-                <option value="sit">sit</option>
-                <option value="roll">roll</option>
-                <option value="bite">bite</option>
-                <option value="ko">KO</option>
-                <option value="getHit">Get hit</option>
-              </select>
-            </div>
+
         </div>
       </div>
     </div>
-    
-    <img
-      src="../../../../asset/img/jeux/technique-animation-sprite/shadow_dog.png"
-      alt=""
-      id="dogSprite"
-    />
-   
 
-    <script
-      type="module"
-      src="../../../../asset/js/jeux/technique-animation-sprite/main.js"
-    ></script>
+    
   </body>
 </html>

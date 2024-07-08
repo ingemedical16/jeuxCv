@@ -74,8 +74,8 @@ export default class Joueur {
     } else {
       this.vy = 0;
     }
-    if (this.y > this.jeux.canvas.height - this.height - 200)
-      this.y = this.jeux.canvas.height - this.height - 200;
+    if (this.y > this.jeux.canvas.height - this.height - 100)
+      this.y = this.jeux.canvas.height - this.height - 100;
 
     if (this.y < 10)
       for (let i = 0; this.y < 10; i++) {
@@ -96,6 +96,6 @@ export default class Joueur {
    * @returns
    */
   onGround() {
-    return this.y >= this.jeux.canvas.height - this.height - 200;
+    return this.y >= this.jeux.canvas.height - this.height - 100;
   }
 }
