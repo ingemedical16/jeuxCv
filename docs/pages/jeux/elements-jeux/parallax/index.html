@@ -3,46 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../../../asset/img/cv/me.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../../asset/styles/tmp.css">
+    <link rel="shortcut icon" href="../../../../asset/img/cv/me.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../asset/styles/tmp.css">
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="../../../static/constant.js"></script>
-    <title>JavaScript game</title>
-    <style>
-      body {
-        background: #111;
-        font-family: "Press Start 2P", system-ui;
-      }
-      canvas {
-        border: 5px solid white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: url("img/grass_day.png");
-      }
-      .assets {
-        display: none;
-      }
-    </style>
+    <script src="../../../../static/constant.js"></script>
+    <title>Parallax Background</title>
+    <link
+      rel="stylesheet"
+      href="../../../../asset/styles/jeux/parallax/style.css"
+    />
   </head>
   <body>
-    <!--ring div starts here-->
-    <div id="ring" class="ring">
+     <!--ring div starts here-->
+     <div id="ring" class="ring">
       <i style="--clr: #00ff0a"></i>
       <i style="--clr: #ff0057"></i>
       <i style="--clr: #fffd44"></i>
@@ -83,7 +60,7 @@
             <span></span>
             <div class="content">
               <div class="imgContainer">
-                <img src="../../../asset/img/cv/me.png" alt="" />
+                <img src="../../../../asset/img/cv/me.png" alt="" />
               </div>
               <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
               <p>
@@ -152,35 +129,26 @@
           ></a>
         </div>
         <div id="jeux">
-          <!--cod de page-->
-          <div>
-              <canvas id="canvas1"></canvas>
-              <div class="assets">
-              <img id="grass_day" src="img/grass_day.png" alt="grass_day" />
-              <img
-                id="grass_night"
-                src="img/grass_night.png"
-                alt="grass_night"
-              />
-              <img
-                id="magic_berry"
-                src="img/magic_berry.png"
-                alt="magic_berry"
-              />
-              <img
-                id="snake_zilla"
-                src="img/snake_zilla.png"
-                alt="snake_zilla"
-              />
-          </div>
-          </div>
+            <!--cod de page-->
+ <div class="container">
+      <canvas id="canvas1"></canvas>
+
+      <p>Game speed: <span id="showGameSpeed"></span></p>
+      <input type="range" min="0" max="20" class="slider" id="slider" />
+      <img src="../../../../asset/img/jeux/parallax/layer-1.png" alt="layer" id="layer1">
+      <img src="../../../../asset/img/jeux/parallax/layer-2.png" alt="layer" id="layer2">
+      <img src="../../../../asset/img/jeux/parallax/layer-3.png" alt="layer" id="layer3">
+      <img src="../../../../asset/img/jeux/parallax/layer-4.png" alt="layer" id="layer4">
+      <img src="../../../../asset/img/jeux/parallax/layer-5.png" alt="layer" id="layer5">
+    </div>
         </div>
       </div>
     </div>
+   
 
-    <script src="constant.js"></script>
-    <script src="food.js"></script>
-    <script src="snake.js"></script>
-    <script src="main.js"></script>
+    <script
+      type="module"
+      src="../../../../asset/js/jeux/parallax/main.js"
+    ></script>
   </body>
 </html>

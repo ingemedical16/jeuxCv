@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/img/cv/me.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="../../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mr. blue</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="loginSection">
+      <!--ring div starts here-->
+      <div id="ring" class="ring">
+        <i style="--clr: #00ff0a"></i>
+        <i style="--clr: #ff0057"></i>
+        <i style="--clr: #fffd44"></i>
+        <div class="login">
+          <h2>CONNEXION</h2>
+          <div class="inputBx">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Entre votre nom complet"
+              required
+            />
+            <p id="nameError" class="error">Entre un nom valid!</p>
+          </div>
+          <div class="inputBx">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Entre votre E-mail"
+              required
+            />
+            <p id="emailError" class="error">Entre un E-mail valide!</p>
+          </div>
+          <div class="inputBx">
+            <input id="loginBtn" type="submit" value="Se connecter" />
+          </div>
+          <div class="links"></div>
+        </div>
+      </div>
+      <!--ring div ends here-->
+    </div>
+    <div id="profilPup">
+        <div class="cardBox">
+            <div class="card">
+              <h2>Bonjour</h2>
+              <span id="nameSpan"></span>
+              <blockquote>Click ici</blockquote>
+              <i class="fa-solid fa-hand-point-down"></i>
+              <div class="content">
+                <div class="imgContainer">
+                  <img src="../../../assets/img/cv/me.png" alt="moi" />
+                </div>
+                <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
+                <p id="profile_p">
+                  Je suis Mohamed EL-IDRISSI le développeur de ce jeu ! Je suis
+                  développeur Full Stack vorace de s’améliorer et prêt toujours
+                  pour le challenge.<br />
+                  Je vais vous accompagner durant toutes les étapes dans votre
+                  aventure, amusez-vous et je vous souhaite bonne chance
+                </p>
+                <hr />
+                <button id="enterBtn" >
+                  Entre dans portfolio
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="isLogin">
+      <header>
+        <div id="wavIcon">
+            <div class="menu">
+                <a
+                  class="icon linkedin"
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/in/ingmedical16/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon angular"
+                  aria-label="Angular"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a class="icon react" aria-label="X" href="#" target="_blank"></a>
+                <a
+                  class="icon bootstrap"
+                  aria-label="bootstrap"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a class="icon html" aria-label="Html" href="#" target="_blank"></a>
+                <a class="icon css" aria-label="CSS" href="#" target="_blank"></a>
+                <a class="icon js" aria-label="js" href="#" target="_blank"></a>
+                <a
+                  class="icon nodejs"
+                  aria-label="nodejs"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon mongodb"
+                  aria-label="mongodb"
+                  href="#"
+                  target="_blank"
+                ></a>
+      
+                <a
+                  class="icon jquery"
+                  aria-label="jquery"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon github"
+                  aria-label="GitHub"
+                  href="https://github.com/ingemedical16"
+                  target="_blank"
+                ></a>
+              </div>
+        </div>
+          <div id="nav">
+            <button id="expand-navigation">-</button>
+
+            <section class="wrapper opened">
+              <ul>
+                <li title="Accueil" >
+                  <a title="Accueil"  href="/docs/index.html"><i title="Accueil"  class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                  <a href="/docs/pages/jeux/blue/index.html"><i title="Jeux Blue" class="fa-solid fa-gamepad"></i></a>
+                </li>
+                <li title="Grenouille">
+                  <a title="Grenouille" href="/docs/pages/jeux/grenouille/index.html"><i title="Grenouille" class="fa-solid fa-chess-queen"></i></a>
+                </li>
+                <li title="serpent">
+                  <a title="serpent" href="/docs/pages/jeux/serpent/index.html"><i title="serpent" class="fa-solid fa-chess-knight"></i></a>
+                </li>
+                <li title="CV responsive">
+                    <a title="CV responsive" href="/docs/pages/cv/index.html"><i title="CV responsive" class="fa-solid fa-file"></i></a>
+                  </li>
+                <li title="Github">
+                  <a title="Github" target="_blank" href="https://github.com/ingemedical16/jeuxCv"><i title="Github" class="fa-brands fa-github"></i></a>
+                </li>
+               
+              </ul>
+            </section>
+
+            <div class="overlay on-overlay"></div>
+         
+        </div>
+      </header>
+
+      <main>
+        <div>
+          <div id="infoBtn" class="info">
+            <img src="./img/info.png" alt="info">
+          </div>
+          <div id="help_container" class="help_container">
+            <div class="help_card">
+              <h1 class="help_title">Mr Blue</h1>
+              <p class="help_p">
+                Le but de ce jeu est de protéger les compétences qui éclosent des œufs, par conséquent. Le joueur  M. Blue devrait prendre les œufs a foret où la sécurité est.<br> Les ennemis doivent être empêche de manger les compétences né.<br>
+Chaque œuf ou nouveau-né qui sort en sécurité, le joueur gagne un point, si le total des points atteint 30 points, le jeu s’arrête pour évaluer, si le jouer a  perd 5 competences ou plus, il perte, si non, il gagent.<br>
+Ce jeu est un demo, le but de montre le potentiel de JavaScript pure sans utilisation de frameworks
+              </p>
+              <button id="help_close" class="help_btn">Jouer</button>
+            </div>
+            <div class="blob"></div>
+          </div>
+        <div class="wrapper">
+          <canvas id="canvas1"></canvas>
+          <img id="overlay" src="./img/overlay.png" alt="overlay" />
+        </div>
+          <div class="assets">
+
+    <img id="bull" src="./img/bull.png" alt="bull" />
+    <img id="egg" src="./img/egg.png" alt="egg" />
+    <img id="larva" src="./img/larva.png" alt="larva" />
+    <img id="obstacles" src="./img/obstacles.png" alt="obstacles" />
+    <img id="toad" src="./img/toad.png" alt="toad" />
+    <img id="toads" src="./img/toads.png" alt="toads" />
+    <img src="./img/skils.png" alt="skils" id="skils" />
+            </div>
+          </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="../../../assets/js/script.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

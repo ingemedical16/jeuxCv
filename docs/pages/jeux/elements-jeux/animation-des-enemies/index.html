@@ -2,44 +2,27 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="../../../asset/img/cv/me.png"
+      href="../../../../asset/img/cv/me.png"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../../asset/styles/tmp.css">
+    <link rel="stylesheet" href="../../../../asset/styles/tmp.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="../../../static/constant.js"></script>
-    <title>JavaScript game</title>
-    <style>
-      body {
-        background: #111;
-        font-family: "Press Start 2P", system-ui;
-      }
-      canvas {
-        border: 5px solid white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: url("img/grass_day.png");
-      }
-      .assets {
-        display: none;
-      }
-    </style>
+    <script src="../../../../static/constant.js"></script>
+    <title>Technique d’animation de sprite</title>
+    <link
+      rel="stylesheet"
+      href="../../../../asset/styles/jeux/animation-des-enemies/style.css"
+    />
   </head>
+
   <body>
     <!--ring div starts here-->
     <div id="ring" class="ring">
@@ -83,7 +66,7 @@
             <span></span>
             <div class="content">
               <div class="imgContainer">
-                <img src="../../../asset/img/cv/me.png" alt="" />
+                <img src="../../../../asset/img/cv/me.png" alt="" />
               </div>
               <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
               <p>
@@ -152,35 +135,41 @@
           ></a>
         </div>
         <div id="jeux">
-          <!--cod de page-->
-          <div>
-              <canvas id="canvas1"></canvas>
-              <div class="assets">
-              <img id="grass_day" src="img/grass_day.png" alt="grass_day" />
-              <img
-                id="grass_night"
-                src="img/grass_night.png"
-                alt="grass_night"
-              />
-              <img
-                id="magic_berry"
-                src="img/magic_berry.png"
-                alt="magic_berry"
-              />
-              <img
-                id="snake_zilla"
-                src="img/snake_zilla.png"
-                alt="snake_zilla"
-              />
-          </div>
+          <div class="container__canvas">
+            <!--cod de page-->
+            <canvas  id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas3"></canvas>
+            <canvas id="canvas4"></canvas>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="constant.js"></script>
-    <script src="food.js"></script>
-    <script src="snake.js"></script>
-    <script src="main.js"></script>
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy1.png"
+      alt="enemy1"
+      id="enemy1"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy2.png"
+      alt="enemy2"
+      id="enemy2"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy3.png"
+      alt="enemy3"
+      id="enemy3"
+    />
+    <img
+      src="../../../../asset/img/jeux/animation-des-enemies/enemy4.png"
+      alt="enemy4"
+      id="enemy4"
+    />
+
+    <script
+      type="module"
+      src="../../../../asset/js/jeux/animation-des-enemies/main.js"
+    ></script>
   </body>
 </html>

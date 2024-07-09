@@ -2,47 +2,26 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../../../asset/img/cv/me.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../../asset/styles/tmp.css">
+    <link rel="shortcut icon" href="../../../../asset/img/cv/me.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../asset/styles/tmp.css">
     <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../../static/constant.js"></script>
-    <title>JavaScript game</title>
-    <style>
-      body {
-        background: #111;
-        font-family: "Press Start 2P", system-ui;
-      }
-      canvas {
-        border: 5px solid white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: url("img/grass_day.png");
-      }
-      .assets {
-        display: none;
-      }
-    </style>
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../../../static/constant.js"></script>
+    <title>Gestion de état du joueur</title>
+    <link
+      rel="stylesheet"
+      href="../../../../asset/styles/jeux/gestion-de-etat-du-joueur/style.css"
+    />
   </head>
+
   <body>
-    <!--ring div starts here-->
-    <div id="ring" class="ring">
+     <!--ring div starts here-->
+     <div id="ring" class="ring">
       <i style="--clr: #00ff0a"></i>
       <i style="--clr: #ff0057"></i>
       <i style="--clr: #fffd44"></i>
@@ -83,7 +62,7 @@
             <span></span>
             <div class="content">
               <div class="imgContainer">
-                <img src="../../../asset/img/cv/me.png" alt="" />
+                <img src="../../../../asset/img/cv/me.png" alt="" />
               </div>
               <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
               <p>
@@ -152,35 +131,22 @@
           ></a>
         </div>
         <div id="jeux">
-          <!--cod de page-->
-          <div>
-              <canvas id="canvas1"></canvas>
-              <div class="assets">
-              <img id="grass_day" src="img/grass_day.png" alt="grass_day" />
-              <img
-                id="grass_night"
-                src="img/grass_night.png"
-                alt="grass_night"
-              />
-              <img
-                id="magic_berry"
-                src="img/magic_berry.png"
-                alt="magic_berry"
-              />
-              <img
-                id="snake_zilla"
-                src="img/snake_zilla.png"
-                alt="snake_zilla"
-              />
-          </div>
-          </div>
+            <!--cod de page-->
+            <canvas id="canvas1"></canvas>
+            <img
+              src="../../../../asset/img/jeux/gestion-de-etat-du-joueur/dog.png"
+              alt=""
+              id="dogSprite"
+            />
+            <h1 id="loading">Loading...</h1>
         </div>
       </div>
     </div>
+    
 
-    <script src="constant.js"></script>
-    <script src="food.js"></script>
-    <script src="snake.js"></script>
-    <script src="main.js"></script>
+    <script
+      type="module"
+      src="../../../../asset/js/jeux/gestion-de-etat-du-joueur/main.js"
+    ></script>
   </body>
 </html>
