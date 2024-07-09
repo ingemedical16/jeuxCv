@@ -1,0 +1,36 @@
+main {
+  display: grid;
+  place-items: center;
+  top: 300px;
+}
+main .wrapper {
+  position: absolute;
+  border: 3px solid goldenrod;
+  width: 800px;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  overflow: hidden;
+}
+main #canvas1 {
+  position: relative;
+  width: 800px;
+  height: 650px;
+}
+main #slider {
+  width: 100%;
+}
+main p {
+  color: white;
+}
+main #showGameSpeed {
+  position: static;
+  font-size: 2rem;
+  font-weight: bold;
+  color:goldenrod;
+
+}
+#layer1, #layer2, #layer3, #layer4, #layer5{
+  display: none;
+}

@@ -1,0 +1,14 @@
+main {
+    font-family: "Press Start 2P", system-ui;
+    display: grid;
+    place-items: center;
+  }
+ 
+
+  #canvas1 {
+    border: 5px solid white;
+    background: url("./img/grass_day.png");
+  }
+main .assets {
+    display: none;
+}
