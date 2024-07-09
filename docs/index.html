@@ -3,216 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="asset/img/cv/me.png" type="image/x-icon" />
-    <link rel="stylesheet" href="asset/styles/style.css" />
-
+    <link rel="shortcut icon" href="./assets/img/cv/me.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Accueil portfolio des jeux</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="static/constant.js"></script>
-    <title>jeux CV</title>
   </head>
   <body>
-    <!--ring div starts here-->
-    <div id="ring" class="ring">
-      <i style="--clr: #00ff0a"></i>
-      <i style="--clr: #ff0057"></i>
-      <i style="--clr: #fffd44"></i>
-      <div class="login">
-        <h2>Login</h2>
-        <div class="inputBx">
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Entre votre nom complet"
-            required
-          />
-          <p id="nameError" class="error">Entre un nom valid!</p>
+    <div id="loginSection">
+      <!--ring div starts here-->
+      <div id="ring" class="ring">
+        <i style="--clr: #00ff0a"></i>
+        <i style="--clr: #ff0057"></i>
+        <i style="--clr: #fffd44"></i>
+        <div class="login">
+          <h2>CONNEXION</h2>
+          <div class="inputBx">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Entre votre nom complet"
+              required
+            />
+            <p id="nameError" class="error">Entre un nom valid!</p>
+          </div>
+          <div class="inputBx">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Entre votre E-mail"
+              required
+            />
+            <p id="emailError" class="error">Entre un E-mail valide!</p>
+          </div>
+          <div class="inputBx">
+            <input id="loginBtn" type="submit" value="Se connecter" />
+          </div>
+          <div class="links"></div>
         </div>
-        <div class="inputBx">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Entre votre E-mail"
-            required
-          />
-          <p id="emailError" class="error">Entre un E-mail valide!</p>
-        </div>
-        <div class="inputBx">
-          <input id="submitBtn" type="submit" value="Sign in" />
-        </div>
-        <div class="links"></div>
       </div>
+      <!--ring div ends here-->
     </div>
-    <!--ring div ends here-->
-    <!-- Navigation -->
-    <div id="nav">
-      <button id="expand-navigation">-</button>
-
-<section class="wrapper opened">
-  <ul>
-    <li><a href="#"><span class="icon-tumblr"></span></a></li>
-    <li><a href="#"><span class="icon-facebook"></span></a></li>
-    <li><a href="#"><span class="icon-google-plus"></span></a></li>
-    <li><a href="#"><span class="icon-dribbble"></span></a></li>
-    <li><a href="#"><span class="icon-github"></span></a></li>
-    <li><a href="#"><span class="icon-twitter"></span></a></li>
-  </ul>
-</section>
-
-<div class="overlay on-overlay"></div>
-    </div>
-    <!-- end navigation -->
-    <div id="isLogin">
-      <div id="maCart">
+    <div id="profilPup">
         <div class="cardBox">
-          <div class="card">
-            <h2>Bonjour</h2>
-            <span>Hover Me</span>
-            <div class="content">
-              <div class="imgContainer">
-                <img src="./asset/img/cv/me.png" alt="" />
+            <div class="card">
+              <h2>Bonjour</h2>
+              <span id="nameSpan"></span>
+              <blockquote>Click ici</blockquote>
+              <i class="fa-solid fa-hand-point-down"></i>
+              <div class="content">
+                <div class="imgContainer">
+                  <img src="./assets/img/cv/me.png" alt="" />
+                </div>
+                <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
+                <p id="profile_p">
+                  Je suis Mohamed EL-IDRISSI le développeur de ce jeu ! Je suis
+                  développeur Full Stack vorace de s’améliorer et prêt toujours
+                  pour le challenge.<br />
+                  Je vais vous accompagner durant toutes les étapes dans votre
+                  aventure, amusez-vous et je vous souhaite bonne chance
+                </p>
+                <hr />
+                <button id="enterBtn" >
+                  Entre dans portfolio
+                </button>
               </div>
-              <h3>Hi ! bienvenue dans mon petit monde extraordinaire !</h3>
-              <p>
-                Je suis Mohamed EL-IDRISSI le développeur de ce jeu ! Je suis
-                développeur Full Stack vorace de s’améliorer et prêt toujours
-                pour le challenge.<br />
-                Je vais vous accompagner durant toutes les étapes dans votre
-                aventure, amusez-vous et je vous souhaite bonne chance
-              </p>
-              <hr />
-              <button id="enterBtn" style="width: 200px">
-                Entre dans portfolio
-              </button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="" id="root">
-        <div class="menu">
-          <a
-            class="icon linkedin"
-            aria-label="LinkedIn"
-            href="https://www.linkedin.com/in/ingmedical16/"
-            target="_blank"
-          ></a>
-          <a
-            class="icon angular"
-            aria-label="Angular"
-            href="#"
-            target="_blank"
-          ></a>
-          <a class="icon react" aria-label="X" href="#" target="_blank"></a>
-          <a
-            class="icon bootstrap"
-            aria-label="bootstrap"
-            href="#"
-            target="_blank"
-          ></a>
-          <a class="icon html" aria-label="Html" href="#" target="_blank"></a>
-          <a class="icon css" aria-label="CSS" href="#" target="_blank"></a>
-          <a class="icon js" aria-label="js" href="#" target="_blank"></a>
-          <a
-            class="icon nodejs"
-            aria-label="nodejs"
-            href="#"
-            target="_blank"
-          ></a>
-          <a
-            class="icon mongodb"
-            aria-label="mongodb"
-            href="#"
-            target="_blank"
-          ></a>
-
-          <a
-            class="icon jquery"
-            aria-label="jquery"
-            href="#"
-            target="_blank"
-          ></a>
-          <a
-            class="icon github"
-            aria-label="GitHub"
-            href="https://github.com/ingemedical16"
-            target="_blank"
-          ></a>
-        </div>
-        <div class="jeuxAccueil">
-          <h2 class="portfolio__title">Selection votre jeu sur le carousel</h2>
-          <div class="container">
-            <div class="carousel">
-              <figure id="fig1" class="show">
-                <a href="./pages/jeux/blue/index.html">
-                  <img alt="..." src="asset/img/home/blue1.png" />
-                </a>
-                <p>Jeux.1 - Blue</p>
-              </figure>
-
-              <figure id="fig2">
-                <a href="./pages/jeux/grenouille/index.html">
-                  <img alt="..." src="asset/img/home/greenouille1.png" />
-                </a>
-                <p>Jeux.2 - Grenouille</p>
-              </figure>
-
-              <figure id="fig3">
-                <a href="./pages/jeux/serpent/index.html">
-                  <img alt="..." src="asset/img/home/serpant1.png" />
-                </a>
-                <p>Jeux.3 - Serpent</p>
-              </figure>
-              <figure id="fig4">
-                <a
-                  href="./pages/jeux/elements-jeux/animation-des-enemies/index.html"
-                >
-                  <img alt="..." src="asset/img/home/enimy.png" />
-                </a>
-                <p>Element de jeux - animation des enemies</p>
-              </figure>
-              <figure id="fig5">
-                <a href="./pages/jeux/elements-jeux/parallax/index.html">
-                  <img alt="..." src="asset/img/home/parallax1.png"
-                /></a>
-                <p>Element de jeux - parallax</p>
-              </figure>
-              <figure id="fig6">
-                <a
-                  href="./pages/jeux/elements-jeux/gestion-de-etat-du-joueur/index.html"
-               > 
-                  <img alt="..." src="asset/img/home/state1.png" />
-                </a>
-                <p>Element de jeux - gestion d’état du joueur</p>
-              </figure>
-              <figure id="fig7">
-                <a
-                  href="./pages/jeux/elements-jeux/technique-animation-sprite/index.html"
-               > 
-                <img alt="..." src="asset/img/home/000.png" />
-                </a>
-                <p>Technique d'animation de sprite</p>
-              </figure>
-              <figure id="fig8">
-                <a href="./pages/cv/cv-responsive-drak-mode/index.html">
-                  <img alt="..." src="asset/img/home/cv.png" />
-                </a>
-                <p>Cv Responsive dark mode</p>
-              </figure>
-            </div>
-          </div>
-          <div class="navigation">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
-          </div>
-        </div>
-      </div>
     </div>
+    <div id="isLogin">
+      <header>
+        <div id="wavIcon">
+            <div class="menu">
+                <a
+                  class="icon linkedin"
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/in/ingmedical16/"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon angular"
+                  aria-label="Angular"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a class="icon react" aria-label="X" href="#" target="_blank"></a>
+                <a
+                  class="icon bootstrap"
+                  aria-label="bootstrap"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a class="icon html" aria-label="Html" href="#" target="_blank"></a>
+                <a class="icon css" aria-label="CSS" href="#" target="_blank"></a>
+                <a class="icon js" aria-label="js" href="#" target="_blank"></a>
+                <a
+                  class="icon nodejs"
+                  aria-label="nodejs"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon mongodb"
+                  aria-label="mongodb"
+                  href="#"
+                  target="_blank"
+                ></a>
+      
+                <a
+                  class="icon jquery"
+                  aria-label="jquery"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon github"
+                  aria-label="GitHub"
+                  href="https://github.com/ingemedical16"
+                  target="_blank"
+                ></a>
+              </div>
+        </div>
+        
+          <div id="nav">
+            <button id="expand-navigation">-</button>
 
-    <script src="asset/js/main.js"></script>
+            <section class="wrapper opened">
+              <ul>
+                <li title="Accueil" >
+                  <a title="Accueil"  href="/docs/index.html"><i title="Accueil"  class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                  <a href="/docs/pages/jeux/blue/index.html"><i title="Jeux Blue" class="fa-solid fa-gamepad"></i></a>
+                </li>
+                <li title="Grenouille">
+                  <a title="Grenouille" href="/docs/pages/jeux/grenouille/index.html"><i title="Grenouille" class="fa-solid fa-chess-queen"></i></a>
+                </li>
+                <li title="serpent">
+                  <a title="serpent" href="/docs/pages/jeux/serpent/index.html"><i title="serpent" class="fa-solid fa-chess-knight"></i></a>
+                </li>
+                <li title="CV responsive">
+                    <a title="CV responsive" href="/docs/pages/cv/index.html"><i title="CV responsive" class="fa-solid fa-file"></i></a>
+                  </li>
+                <li title="Github">
+                  <a title="Github" target="_blank" href="https://github.com/ingemedical16/jeuxCv"><i title="Github" class="fa-brands fa-github"></i></a>
+                </li>
+               
+              </ul>
+            </section>
+
+            <div class="overlay on-overlay"></div>
+          </div>
+      
+      </header>
+
+      <main>
+        <div>
+          <div id="portfolio" class="wrapper">
+            <div  class="jeuxAccueil">
+              <h1 class="portfolio__title">Selection votre jeu sur le carousel</h1>
+              <div class="container">
+                <div class="carousel">
+                  <figure id="fig1" class="show">
+                    <a href="./pages/jeux/blue/index.html">
+                      <img alt="..." src="./assets/img/home/blue1.png" />
+                    </a>
+                    <p>Jeux.1 - Blue</p>
+                  </figure>
+    
+                  <figure id="fig2">
+                    <a href="./pages/jeux/grenouille/index.html">
+                      <img alt="..." src="./assets/img/home/greenouille1.png" />
+                    </a>
+                    <p>Jeux.2 - Grenouille</p>
+                  </figure>
+    
+                  <figure id="fig3">
+                    <a href="./pages/jeux/serpent/index.html">
+                      <img alt="..." src="./assets/img/home/serpant1.png" />
+                    </a>
+                    <p>Jeux.3 - Serpent</p>
+                  </figure>
+                  <figure id="fig4">
+                    <a
+                      href="./pages/elements-jeux/animation-des-enemies/index.html"
+                    >
+                      <img alt="..." src="./assets/img/home/enimy.png" />
+                    </a>
+                    <p>Element de jeux - animation des enemies</p>
+                  </figure>
+                  <figure id="fig5">
+                    <a href="./pages/elements-jeux/parallax/index.html">
+                      <img alt="..." src="./assets/img/home/parallax1.png"
+                    /></a>
+                    <p>Element de jeux - parallax</p>
+                  </figure>
+                  <figure id="fig6">
+                    <a
+                      href="./pages/elements-jeux/gestion-de-etat-du-joueur/index.html"
+                   > 
+                      <img alt="..." src="./assets/img/home/state1.png" />
+                    </a>
+                    <p>Element de jeux - gestion d’état du joueur</p>
+                  </figure>
+                  <figure id="fig7">
+                    <a
+                      href="./pages/elements-jeux/technique-animation-sprite/index.html"
+                   > 
+                    <img alt="..." src="./assets/img/home/000.png" />
+                    </a>
+                    <p>Technique d'animation de sprite</p>
+                  </figure>
+                  <figure id="fig8">
+                    <a href="./pages/cv/index.html">
+                      <img alt="..." src="./assets/img/home/cv.png" />
+                    </a>
+                    <p>Cv Responsive dark mode</p>
+                  </figure>
+                </div>
+              </div>
+              <div class="navigation">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+              </div>
+            </div>
+            
+          </div>
+           
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
